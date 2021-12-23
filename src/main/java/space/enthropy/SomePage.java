@@ -22,7 +22,7 @@ public class SomePage {
     @GET
     @Produces(MediaType.TEXT_HTML)
     public TemplateInstance get(@QueryParam("name") String name) {
-        return page.data("name", name);
+        return page.data("name", name + "Yeas");
     }
 
 }
